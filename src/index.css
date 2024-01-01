@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 20px 0;
+}
+
+.app {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.count-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+button {
+  background-color: #1d4ed8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #60a5fa;
+}
+
+p {
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.count-container button {
+  width: 38px;
+  height: 38px;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-btn {
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
+.input {
+  padding: 12px;
+
+  border-radius: 5px;
+  border: none;
+  background-color: #eff6ff;
+  font-size: 14px;
+  outline: 2px solid transparent;
+}
+
+.input:focus {
+  outline: 2px solid #60a5fa;
+}
